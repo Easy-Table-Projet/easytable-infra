@@ -1,0 +1,39 @@
+# --- Terraform 작업 디렉터리 ---
+.terraform/
+
+# --- Terraform 상태 파일(민감 정보 포함 가능) ---
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.backup
+
+# --- Terraform Crash 로그 ---
+crash.log
+
+# --- Terraform Lock 파일 (팀 정책에 따라 커밋 여부 결정) ---
+.terraform.lock.hcl
+
+# --- Override 파일 ---
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- CLI 설정 파일 ---
+.terraformrc
+terraform.rc
+
+# --- Terraform 변수 파일(민감 정보 가능) ---
+*.tfvars
+terraform.tfvars
+
+# --- 환경 변수 파일(민감 정보 가능) ---
+.env
+
+# --- IDE / 편집기 디렉터리 및 파일 ---
+# 예: JetBrains 계열(이하 IntelliJ, GoLand 등)
+.idea/
+# 예: VSCode
+.vscode/
+# vim swap 파일 등
+*.swp

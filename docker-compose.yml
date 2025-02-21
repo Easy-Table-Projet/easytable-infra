@@ -1,0 +1,10 @@
+services:
+  terraform:
+    image: hashicorp/terraform:latest
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    entrypoint: [""]
+    command: sh
+    tty: true
+    stdin_open: true
